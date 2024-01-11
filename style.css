@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+}
+section {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: column;
+}
+.selection {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+section button {
+  width: 20vh;
+  height: 20vh;
+}
+section button img {
+  width: 10vh;
+  height: 10vh;
+  object-fit: cover;
+}
+.counter {
+  font-size: 4rem;
+  background-color: #123412;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.elementor-toggle {
+  pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  section {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  section button {
+    width: 20rem;
+    height: 20rem;
+  }
+  section button img {
+    width: 25vh;
+    height: 25vh;
+  }
+}
